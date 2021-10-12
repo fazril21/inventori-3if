@@ -14,3 +14,6 @@
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('/name/{nrp}/{name}', function ($nrp,$name) {
+    return "Hello " . $nrp . $name;
+});
