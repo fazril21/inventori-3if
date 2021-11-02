@@ -17,3 +17,6 @@ Route::get('/', function () {
 Route::get('/name/{nrp}/{name}', function ($nrp,$name) {
     return "Hello " . $nrp . $name;
 });
+Route::get('/person', 'PersonController@index');
+Route::get('/person/show/{param}', 'PersonController@show');
+Route::resource('/student', 'StudentController');
